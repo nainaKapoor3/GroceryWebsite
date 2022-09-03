@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+      
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+      }
+      .container{
+        min-height: 100vh;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -100px;
+
+      }
+
+      .card{
+        background-color: white;
+        width: 300px;
+        padding: 15px;
+      }
+      .card .imgContainer{
+        width: 100%;
+        height: 300px;
+        border: 1px dashed #ccc;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .infoBox .rating{
+        margin: 5px 0;
+      }
+
+      .infoBox .title{
+        font-weight: 500;
+        color:#444;
+        font-family: font-family: 'Poppins', sans-serif;
+
+      }
+
+      .infoBox .price{
+        font-size: 22px;
+        font-weight: 300;
+        font-family: font-family: 'Poppins', sans-serif;
+      }
+      
+      .infoBox .buttonGroup{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+      .infoBox .buttonGroup button{
+        border: 0;
+        outline: 0;
+        color: white;
+        padding: 7px 15px;
+         font-family: font-family: 'Poppins', sans-serif;
+         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      .infoBox .buttonGroup button:hover{
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      }
+
+      .infoBox .buttonGroup button.buy{
+        background-color: orange;
+
+      }
+
+      .infoBox .buttonGroup button.addToCart{
+        background-color: green;
+      }
+
+      .imgContainer img{
+        height: 300px;
+        width: 250px;
+
+      }
+
+      .card .imgContainer img:nth-child(2){
+        position: absolute;
+        top: -20%;
+        left: 0;
+        opacity: 0;
+        transition: 0.5s all;
+      }
+
+      .card .imgContainer:hover img:nth-child(2){
+        opacity: 1;
+        top: 0;
+      }
+
+
+      .rating img{
+        height: 20px;
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://res.sastasundar.com/incom/images/product/Godrej-Ezee-Liquid-Detergent-1591877054-10039049-1.jpg">
+          <img src="https://www.zelorra.com/grocery/wp-content/uploads/2020/09/Godrej-Ezee-Liquid-Detergent-200g-Back.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Godrej Ezee Liquid Detergent 1kg
+          </div>
+
+          <div class="price">
+            Rs.175
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+       <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://m.media-amazon.com/images/I/61pY++N4XFL._AC_SS450_.jpg">
+          <img src="https://aryumart.com/images/61PqVKu1qdL._SL1000__1587804095vNoOF.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Lizol Disinfectant
+          </div>
+
+          <div class="price">
+            Rs.188
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51QQP95GdsL._AC_.jpg">
+          <img src="https://www.jiomart.com/images/product/420x420/490999937/tide-plus-jasmine-rose-detergent-powder-4-kg-get-1-kg-free-1-20210205.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Tide Surf 5kg
+          </div>
+
+          <div class="price">
+            Rs.365
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://media-services.hyho-digital.com/s3/hyho-live-productcatalogue/sys-master/images/h2d/h06/8839320010782/original.jpg?width=1280&height=1280">
+          <img src="https://5.imimg.com/data5/CP/KO/MY-37563526/harpic-power-plus-500x500.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Harpic Cleaner 
+          </div>
+
+          <div class="price">
+            Rs.89
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+    </div>
+
+
+
+
+<div class="container">
+      
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://driftbasket.com/wp-content/uploads/2018/10/Colin-2X-more-shine-500ml-1.jpg">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/6128PxrKpJL._SL1000_.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Colin Glass Cleaner Spray
+          </div>
+
+          <div class="price">
+            Rs.85
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+       <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://res.sastasundar.com/incom/images/product/Dettol-Disinfectant-Spray-Original-Pine-1582017804-10070560-1.jpg">
+          <img src="https://media.clickoncare.com/catalog/product/cache/1/thumbnail/500x500/9df78eab33525d08d6e5fb8d27136e95/d/e/dettol-disinfeectant-spray_2-7345237969.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Dettol Disinfectant Spray 225ml
+          </div>
+
+          <div class="price">
+            Rs.126
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://apanamart.com/wp-content/uploads/2020/09/ODONIL-ZIPPER-AIR-FRESHNER-JOYFUL-LAVENDER.jpg">
+          <img src="https://www.zelorra.com/grocery/wp-content/uploads/2020/10/odonil-zipper-lavender_1.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Odonil 75gm
+          </div>
+
+          <div class="price">
+            Rs.45
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://easykart4u.com/public/uploads/products/meta/qQolaenXpSUPgVGGZf8vzh7HADIwM76ND7dLBb5U.jpeg">
+          <img src="https://www.netmeds.com/images/product-v1/600x600/13381/lux_velvet_touch_jasmine_almond_oil_soap_bar_100_gm_2.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Lux Velvet Touch Soap
+          </div>
+
+          <div class="price">
+            Rs.65
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+    </div>
+
+
+    
+    
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Our Features</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+	<style>
+		body{
+	background-image: url('');
+	
+}
+.main-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.wrapper{
+	padding: 15px 30px 30px;
+	color: black;
+	border: 2px solid brown ;
+	border-radius: 50px;
+	background-color: #BDEE9D;
+	transition: 0.3s;
+}
+.wrapper .icon i{
+	font-size: 25px;
+	color: #007bff;
+}
+.wrapper .header{
+	font-size: 21px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-weight: 550;
+}
+.wrapper:hover{
+	border: 2px solid brown;
+	box-shadow: 0px 0px 20px brown;
+	-webkit-transform: scale(1.025);
+	-ms-transform: scale(1.025);
+	transform: scale(1.025);
+	transition: 0.3s;
+}
+
+
+	</style>
+</head>
+<body>
+	<h1>Welcome to Grocer's PAntry!!</h1>
+
+	<div class="container">
+		<div class="main-content">
+			<h2 class="text-black">Our Features</h2>
+			<div class="row mt-5">
+
+				<div class="col-md-3">
+					<div class="wrapper">
+						
+						<div class="header">
+							FAST AND FREE DELIVERY
+						</div>
+						<div class="sub-title">
+							You can avail the perks of free deliveries on your first three orders and track your orders.
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="wrapper">
+						
+						<div class="header">
+						   REGULAR SANITIZATION AND CLEANING
+						</div>
+						<div class="sub-title">
+							Storage locations and stores are being sanitized regularly to ensure that there is no chance of infection.
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="wrapper">
+						
+						<div class="header">
+							24/7 ONLINE SUPPORT
+						</div>
+						<div class="sub-title">
+							We are providing a 24/7 online support to customers so that they can order anytime as per their convenience.
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="wrapper">
+						
+						<div class="header">
+							RETURN POLICY
+						</div>
+						<div class="sub-title">
+							You can avail return policy by informing within two days of delivery.
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let namasteBtn =document.querySelector('h1');
+		namasteBtn.addEventListener('click',inputMsg);
+
+		function inputMsg(){
+			let name=prompt("Enter your name");
+			namasteBtn.textContent='Hii '+name+' Enjoy the following features!!';
+		}
+	</script>
+</body>
+</html>
