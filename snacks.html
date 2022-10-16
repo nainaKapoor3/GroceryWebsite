@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+      
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+      }
+      .container{
+        min-height: 100vh;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -100px;
+
+      }
+
+      .card{
+        background-color: white;
+        width: 300px;
+        padding: 15px;
+      }
+      .card .imgContainer{
+        width: 100%;
+        height: 300px;
+        border: 1px dashed #ccc;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .infoBox .rating{
+        margin: 5px 0;
+      }
+
+      .infoBox .title{
+        font-weight: 500;
+        color:#444;
+        font-family: font-family: 'Poppins', sans-serif;
+
+      }
+
+      .infoBox .price{
+        font-size: 22px;
+        font-weight: 300;
+        font-family: font-family: 'Poppins', sans-serif;
+      }
+      
+      .infoBox .buttonGroup{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+      }
+      .infoBox .buttonGroup button{
+        border: 0;
+        outline: 0;
+        color: white;
+        padding: 7px 15px;
+         font-family: font-family: 'Poppins', sans-serif;
+         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      .infoBox .buttonGroup button:hover{
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      }
+
+      .infoBox .buttonGroup button.buy{
+        background-color: orange;
+
+      }
+
+      .infoBox .buttonGroup button.addToCart{
+        background-color: green;
+      }
+
+      .imgContainer img{
+        height: 300px;
+        width: 250px;
+
+      }
+
+      .card .imgContainer img:nth-child(2){
+        position: absolute;
+        top: -20%;
+        left: 0;
+        opacity: 0;
+        transition: 0.5s all;
+      }
+
+      .card .imgContainer:hover img:nth-child(2){
+        opacity: 1;
+        top: 0;
+      }
+
+
+      .rating img{
+        height: 20px;
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://www.netmeds.com/images/product-v1/600x600/911355/mtr_instant_rava_idli_mix_1_kg_0_0.jpg">
+          <img src="https://m.media-amazon.com/images/I/618iCyA8rmL._SL1000_.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            MTR Rava Idli Breakfast Mix 1kg
+          </div>
+
+          <div class="price">
+            Rs.167
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+       <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://n4.sdlcdn.com/imgs/b/s/6/Haldiram-s-Khatta-Meetha-1-SDL767532628-1-86fdc.jpg">
+          <img src="https://www.bigbasket.com/media/uploads/p/l/20002426-2_1-haldirams-namkeen-khatta-meetha.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Haldiram Khatta Meetha Namkeen 1kg
+          </div>
+
+          <div class="price">
+            Rs.160
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://d37ky63zmmmzfj.cloudfront.net/production/itemimages/packed_food/beverages/syrups_squashes/Hershey's%20_Chocolate%20Syrup_680%20gm.jpg">
+          <img src="https://www.bigbasket.com/media/uploads/p/xxl/40079753-2_8-hersheys-syrup-milk-booster.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Hershey's Genuine Chocolate Syrup 623g
+          </div>
+
+          <div class="price">
+            Rs.200
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOAwbnc1BSI7LCc1FiUXmghcuYjZ5UhyhC-w&usqp=CAU">
+          <img src="https://www.bigbasket.com/media/uploads/p/l/312169-2_3-britannia-bake-rusk-toast.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Britannia Rusk 1kg
+          </div>
+
+          <div class="price">
+            Rs.85
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+    </div>
+
+
+
+
+<div class="container">
+      
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://res.sastasundar.com/incom/images/product/Dabur-Honey-Free-20--Extra-1538135738-10050416-1.jpg">
+          <img src="https://www.jiomart.com/images/product/420x420/490012806/dabur-honey-1-kg-get-200-g-extra-1-20210211.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Dabur Honey
+          </div>
+
+          <div class="price">
+            Rs.105
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+       <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://cdn.shopify.com/s/files/1/1463/4916/products/britannia-nutri-choice-biscuits-digestive-high-fibre-1kg-pack-grocery-britannia_600x600.jpg?v=1557750256">
+          <img src="https://cdn.shopify.com/s/files/1/1463/4916/products/britannia-nutri-choice-biscuits-digestive-high-fibre-1kg-pack-grocery-britannia-2_1024x1024.jpg?v=1557750256">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Nutri Choice Biscuit 1kg
+          </div>
+
+          <div class="price">
+            Rs.119
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81Gb0lYSH1L._AC_SY550_.jpg">
+          <img src="https://assetscdn1.paytm.com/images/catalog/product/F/FA/FASKISSAN-FRESHBIGB985832AF285BD8/1561496240938_2.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Kisan Tomato Ketchup 950g
+          </div>
+
+          <div class="price">
+            Rs.110
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!-- card start -->
+      <div class="card">
+        <div class="imgContainer">
+          <img src="https://www.bigbasket.com/media/uploads/p/l/40145304_6-alpino-natural-peanut-butter-smooth-unsweetenedgluten-free-non-gmovegan.jpg">
+          <img src="https://m.media-amazon.com/images/I/41XNqNm68hL.jpg">
+        </div>
+
+        <div class="infoBox">
+          <div class="rating">
+             <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/stars-2/381/star-shape-yellow_03-512.png">
+          </div>
+
+          <div class="title">
+            Alpino Peanut Butter 1kg
+          </div>
+
+          <div class="price">
+            Rs.389
+          </div>
+
+          <div class="buttonGroup">
+            <button class="buy">
+              Buy Now
+            </button>
+            <button class="addToCart">
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+    </div>
+
+
+    
+    
+  </body>
+</html>
